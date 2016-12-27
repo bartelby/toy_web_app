@@ -1,0 +1,22 @@
+
+CREATE TABLE USERS (
+  user_id INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_name VARCHAR(45) NULL,
+  email_address VARCHAR(45) NULL,
+  u_password VARCHAR(100) NULL
+);
+
+CREATE TABLE EVENTS (
+  event_id INTEGER PRIMARY KEY AUTOINCREMENT,
+  event_name VARCHAR(45) NULL
+);
+
+CREATE TABLE TICKETS (
+  customer_id INTEGER,
+  show_id INTEGER,
+  tickets INT,
+  FOREIGN KEY(customer_id) REFERENCES USERS(user_id),
+  FOREIGN KEY(show_id) REFERENCES EVENTS(event_id)
+);
+
+

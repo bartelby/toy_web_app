@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AdmitOne Search Events</title>
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../static/admit_one.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+              <li role="presentation"><a href="#">{{user}}</a></li>
+              <li role="presentation"><a href="sign_out">Log Out</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">AdmitOne Search Events</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>AdmitOne Search Form</h1>
+        <form class="form-signin" action="search_events" method="POST">
+        <label for="fromEventId" class="sr-only">From Event ID</label>
+        <input type="name" name="fromEventId" id="fromEventId" class="form-control" placeholder="From Event ID" required autofocus>
+        <p></p>
+        <label for="toEventId" class="sr-only">To Event ID</label>
+        <input type="name" name="toEventId" id="toEventId" class="form-control" placeholder="to Event ID" required autofocus>
+        <p></p>
+        <button id="btnSearch" class="btn btn-lg btn-primary btn-block" type="submit">Search Events</button>
+        <span id="msg"></span>
+      </form>
+      </div>
+
+
+
+      <footer class="footer">
+        <p>&copy; Peter Sisk 2016</p>
+      </footer>
+
+    </div>
+  </body>
+</html>
