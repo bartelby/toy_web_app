@@ -1,6 +1,13 @@
 The project consists of a minimal Flask web app whose requirements are given
 in the accompanying PDF file.
 
+Prepare the environment by doing the following:
+For installation on clean mac:
+(1) sudo easy_install pip
+(2) sudo pip install virtualenv
+(3) pip install flask
+(4) Install Apple developer tools if prompted
+
 To run the web application, do the following:
 (1)     Activate the virtual environment. In a command or terminal window
         navigate to the project's top level directory and enter
